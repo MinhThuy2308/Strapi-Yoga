@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fav_foods",
+  "info": {
+    "name": "FavFood",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user": {
+      "via": "fav_foods",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "food": {
+      "model": "food",
+      "via": "fav_foods"
+    }
+  }
+}

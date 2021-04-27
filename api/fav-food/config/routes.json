@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fav-foods",
+      "handler": "fav-food.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fav-foods/count",
+      "handler": "fav-food.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fav-foods/:id",
+      "handler": "fav-food.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fav-foods",
+      "handler": "fav-food.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fav-foods/:id",
+      "handler": "fav-food.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fav-foods/:id",
+      "handler": "fav-food.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
